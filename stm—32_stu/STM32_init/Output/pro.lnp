@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp
+"..\output\main.o"
+"..\output\stm32f4xx_it.o"
+"..\output\rcc.o"
+"..\output\stm32f4xx_itconfig.o"
+"..\output\misc.o"
+"..\output\stm32f4xx_gpio.o"
+"..\output\stm32f4xx_rcc.o"
+"..\output\stm32f4xx_exti.o"
+"..\output\stm32f4xx_syscfg.o"
+"..\output\stm32f4xx_usart.o"
+"..\output\system_stm32f4xx.o"
+"..\output\startup_stm32f40_41xxx.o"
+"..\output\key.o"
+"..\output\beep.o"
+"..\output\12.o"
+"..\output\delay.o"
+"..\output\sys_1.o"
+"..\output\usart.o"
+--library_type=microlib --strict --scatter "..\Output\pro.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\Listing\pro.map" -o ..\Output\pro.axf
